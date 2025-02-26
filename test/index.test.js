@@ -1,6 +1,7 @@
 const backend_url = "https://loaclhost:3000";
+const axios = require('axios');
 const ws_url="ws://localhost:3001";
-import WebSocketServer from 'websockets/lib/websockets/server';
+import WebSocketServer from 'websockets'
 describe("Authentication", () => {
   test("User is able to sign up only once ", async () => {
     const username = "aditya" + Math.random();
@@ -1142,4 +1143,4 @@ describe("Websockets tests",()=>{
      
       })
  
-    })
+  })
