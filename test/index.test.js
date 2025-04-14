@@ -26,7 +26,7 @@ describe("Authentication", () => {
     const username = "aditya" + Math.random();
     const password = "123456";
 
-    const response = axios.post(`${backend_url}/api/v1/signup`, {
+    const response = axios.post(`${backend_url}/api/v1/signup`, {k
       password,
     });
     expect(response.statusCode).toBe(400);
